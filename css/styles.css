@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background-image: url("../images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/***************************************/
+/***************************************/
+/***************************************/
+/* Navbar Section */
+.header{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    width: 100%;
+    padding: 2% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo{
+    text-align: center;
+}
+
+.nav-logo h3{
+    color: #fff;
+    font-family: Product Sans;
+    font-size: 0.8rem;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    list-style: none;
+
+}
+
+.nav-links a{
+    font-family: Product Sans;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: 2rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.nav-links a::after{
+    content: '';
+    display: block;
+    border-bottom: 2px solid #fff;
+    width: 0;
+    transition: 0.3s ease-in-out;
+    margin-left: 2rem;
+}
+
+.nav-links a:hover::after{
+    width: 75%;
+}
+
+.menubar {
+    width:40px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    display: none;
+}
+
+.bar{
+    width:100%;
+    height: 3px;
+    margin-top: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.bar1{
+    width: 90%;
+}
+
+.bar2{
+    width: 60%;
+}
+
+.bar3{
+    width: 100%;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    /***************************************/
+    /***************************************/
+    /***************************************/
+    /* Navbar Section */
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links-div{
+        width: 100%;
+        transform: translate(-100%, 0);
+        transition: 0.5s ease-in-out;
+        /* position: absolute; */
+        padding: 10px 0;
+        top: 15%;
+    }
+
+    .nav-logo img{
+        width: 30%;
+    }
+
+    .nav-logo h3{
+        font-size: 0.7rem;
+    }
+
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .nav-links{
+        margin-top: 1.5rem;
+    }
+
+    .nav-links a{
+        position: relative;
+    }
+
+    .menubar {
+        display: flex;
+         width:25px;
+        height: 20px;
+        position: absolute; 
+        right: 0;
+        top:0; 
+        margin:18px 20px;
+    }
+
+    .bar2{
+        width: 75%;
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    .bar1,.bar2,.bar3{
+        transition: 0.3s;
+    }
+
+    .barclose1{
+        width: 100%;
+        position: absolute;
+        transform: rotate(45deg);
+    }
+
+    .barclose2{
+        width: 100%;
+        position: absolute;
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+
+    .barclose3{
+        width: 100%;
+        position: absolute;
+        transform: rotate(-45deg);
+    }
+
+    .newlinks{
+        transform: translate(0,0);
+    }
+
+}
