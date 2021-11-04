@@ -278,7 +278,24 @@ body{
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    
+    /***************************************/
+    /***************************************/
+    /***************************************/
+    /* Introduction Section */
+    .introduction h3{
+        font-size: 3rem;
+    }
+
+    .introduction p{
+        font-size: 1.2rem;
+    }
+
+    .introduction-btn{
+        margin-top: 2.5rem;
+        width: 16rem;
+        height: 4rem;
+        font-size: 1.5rem;
+    }
 }
 
 
