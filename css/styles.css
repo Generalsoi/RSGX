@@ -117,7 +117,7 @@ body{
 /***************************************/
 /* Introduction Section */
 .introduction{
-    padding: 5% 2% 5% 10%;
+    padding: 10% 2% 5% 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
