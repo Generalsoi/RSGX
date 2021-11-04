@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/robot-reavers');
+
 @font-face {
     font-family: 'Product Sans';
     font-style: normal;
@@ -107,6 +109,176 @@ body{
 
 .bar3{
     width: 100%;
+}
+
+
+/***************************************/
+/***************************************/
+/***************************************/
+/* Introduction Section */
+.introduction{
+    padding: 5% 2% 5% 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.introduction-content{
+    color: #fff;
+}
+
+.introduction h3{
+    font-size: 3.5rem;
+    font-weight: 400;
+    font-family: 'Robot Reavers', sans-serif;
+    text-transform: uppercase;
+    animation: typing 5s steps(40, end);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.introduction img{
+    position: absolute;
+    left: 2%;
+    top: 22%;
+    width: 25%;
+    animation-duration: 5s;
+    animation-name: image-slide-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes image-slide-in {
+    0%{
+        display: block;
+    }
+
+    50%{
+        display: block;
+        transform: translateX(10%);
+        transition: ease-in
+    }
+
+    100%{
+        display: block;
+        transform: translateX(0);
+    }
+}
+
+.introduction p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: Product Sans;
+}
+
+.introduction-btn{
+    margin-top: 2.5rem;
+    width: 18.75rem;
+    height: 4.5rem;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(90deg, rgba(215, 222, 248, 0.51) 4.33%, rgba(255, 255, 255, 0) 129%);
+    color: #0096FF;
+    font-size: 1.375rem;
+    font-family: Product Sans;
+    cursor: pointer;
+}
+
+.social-media-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media-links div{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: rgba(0, 150, 255, 0.3);
+    text-align: center;
+    padding: 18px;
+}
+
+.social-media-links div a{
+    margin: auto;
+}
+
+.social-media-links div a i{
+    color: #fff;
+}
+
+.social-media-links div:first-child{
+    margin-bottom: 6rem;
+}
+
+.social-media-links div:last-child{
+    margin-top: 6rem;
+}
+
+@media screen and (max-width: 767px) {
+    /***************************************/
+    /***************************************/
+    /***************************************/
+    /* Introduction Section */
+    .introduction{
+        padding: 10% 4%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .introduction h3{
+        font-size: 1.5rem;
+    }
+
+    .introduction p{
+        font-size: 0.8rem;
+    }
+
+    .introduction-btn{
+        margin-top: 2.5rem;
+        width: 12rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+
+    .social-media-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 3rem auto;
+    }
+
+    .social-media-links div:first-child{
+        margin: 0 4rem 0 0;
+    }
+    
+    .social-media-links div:last-child{
+        margin: 0 0 0 4rem;
+    }
+
+    .introduction img{
+        position: absolute;
+        left: 2%;
+        top: 10%;
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    
 }
 
 
