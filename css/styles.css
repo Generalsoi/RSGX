@@ -231,7 +231,7 @@ body{
     /***************************************/
     /* Introduction Section */
     .introduction{
-        padding: 10% 4%;
+        padding: 15% 4%;
         width: 100%;
         flex-direction: column;
         justify-content: space-between;
@@ -272,7 +272,7 @@ body{
     .introduction img{
         position: absolute;
         left: 2%;
-        top: 10%;
+        top: 12%;
         width: 40%;
     }
 }
