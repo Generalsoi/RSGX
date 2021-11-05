@@ -20,6 +20,22 @@ body{
     background-size: cover;
 }
 
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal .active{
+    transform: translateY(0px);
+    opacity: 100%;
+}
+
+.introduction-section, .about-section{
+    width: 100%;
+}
+
 
 /***************************************/
 /***************************************/
@@ -225,6 +241,95 @@ body{
     margin-top: 6rem;
 }
 
+
+/***************************************/
+/***************************************/
+/***************************************/
+/* About Section */
+.about{
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-family: Product Sans;
+}
+
+.about-content{
+    flex: 1;
+}
+
+.about-content-one{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    text-align: center
+}
+
+.about-content-one .child{
+    width: 40%;
+}
+
+.about-content-one .child div{
+    width: 16rem;
+    height: 6.5rem;
+    background: linear-gradient(180deg, rgba(0, 150, 255, 0.22) 0%, rgba(0, 150, 255, 0) 100%);
+    text-align: left;
+    padding: 25px;
+    margin-top: 0.5rem;
+}
+
+.about-content-one .child div h4{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.about-content-one .child div p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.about-content-two{
+    padding: 0 4.5rem;
+}
+
+.about-content-two h4{
+    width: 15%;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-bottom: 8px solid #FF325F;
+    padding-bottom: 10px;
+}
+
+.about-content-two h3{
+    font-size: 2.5rem;
+    font-family: 'Robot Reavers';
+    margin: 1.5rem 0;
+}
+
+.about-content-two p{
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+}
+
+.about-content-button{
+    width: 18.75rem;
+    height: 4.5rem;
+    background: linear-gradient(90deg, rgba(215, 222, 248, 0.51) 4.33%, rgba(255, 255, 255, 0) 129%);
+    color: #0096FF;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
 @media screen and (max-width: 767px) {
     /***************************************/
     /***************************************/
@@ -258,7 +363,7 @@ body{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin: 3rem auto;
+        margin: 3rem auto 0;
     }
 
     .social-media-links div:first-child{
@@ -274,6 +379,73 @@ body{
         left: 2%;
         top: 12%;
         width: 40%;
+    }
+
+    /***************************************/
+    /***************************************/
+    /***************************************/
+    /* About Section */
+    .about{
+        width: 100%;
+        padding: 5% 4%;
+        flex-direction: column-reverse;
+    }
+
+    .about-content-one{
+        width: 100%;
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .about-content-one .child div{
+        width: 100%;
+        height: 6.5rem;
+        text-align: left;
+        padding: 10px;
+        margin-top: 0.5rem;
+    }
+
+    .about-content-one .child div h4{
+        font-size: 1rem;
+    }
+    
+    .about-content-one .child div p{
+        font-size: 0.8rem;
+    }
+
+    .about-content-two{
+        padding: 0;
+        width: 100%;
+        margin-bottom: 2.5rem;
+    }
+    
+    .about-content-two h4{
+        width: 15%;
+        font-size: 1rem;
+    }
+    
+    .about-content-two h3{
+        font-size: 1.5rem;
+    }
+    
+    .about-content-two p{
+        font-size: 1rem;
+    }
+
+    .about-content-button{
+        width: 60%;
+        height: 4.5rem;
+        font-size: 1rem;
+    }
+
+    .about-content-one .child{
+        width: 70%;
+    }
+
+    .about-content-two p{
+        width: 100%;
     }
 }
 
@@ -296,6 +468,10 @@ body{
         height: 4rem;
         font-size: 1.5rem;
     }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    
 }
 
 
