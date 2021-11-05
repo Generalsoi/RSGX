@@ -32,7 +32,7 @@ body{
     opacity: 100%;
 }
 
-.introduction-section, .about-section{
+.introduction-section, .about-section, .gameplay-section{
     width: 100%;
 }
 
@@ -330,6 +330,72 @@ body{
     margin-top: 1rem;
 }
 
+/***************************************/
+/***************************************/
+/***************************************/
+/* Gameplay Section */
+.gameplay{
+    padding: 1% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-family: Product Sans;
+}
+
+.gameplay-content{
+    flex: 1;
+}
+
+.gameplay-content img{
+    width: 80%;
+    opacity: 60%;
+    animation-duration: 5s;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    0%{
+        display: block;
+    }
+
+    50%{
+        display: block;
+        transform:rotateY(180deg);
+        transition: ease-in
+    }
+
+    100%{
+        display: block;
+        transform: rotateY(0);
+    }
+}
+
+.gameplay-content-one{
+    padding: 0 5rem 0 0;
+}
+
+.gameplay-content-one h4{
+    width: 15%;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-bottom: 8px solid #FF325F;
+    padding-bottom: 10px;
+}
+
+.gameplay-content-one h3{
+    font-size: 2.5rem;
+    font-family: 'Robot Reavers';
+    margin: 1.5rem 0;
+}
+
+.gameplay-content-one p{
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+}
+
+
 @media screen and (max-width: 767px) {
     /***************************************/
     /***************************************/
@@ -444,8 +510,35 @@ body{
         width: 70%;
     }
 
-    .about-content-two p{
+    /***************************************/
+    /***************************************/
+    /***************************************/
+    /* Gameplay Section */
+
+    .gameplay{
         width: 100%;
+        padding: 5% 4%;
+        flex-direction: column;
+    }
+    
+    .gameplay-content img{
+        width: 100%;
+    }
+    
+    .gameplay-content-one{
+        padding: 0 ;
+    }
+    
+    .gameplay-content-one h4{
+        font-size: 1rem;
+    }
+    
+    .gameplay-content-one h3{
+        font-size: 1.5rem;
+    }
+    
+    .gameplay-content-one p{
+        font-size: 1rem;
     }
 }
 
@@ -535,7 +628,39 @@ body{
     .about-content-two p{
         width: 100%;
     }
+
+    /***************************************/
+    /***************************************/
+    /***************************************/
+    /* Gameplay Section */
+
+    .gameplay{
+        width: 100%;
+        padding: 5% 4%;
+        flex-direction: column;
+    }
+    
+    .gameplay-content img{
+        width: 100%;
+    }
+    
+    .gameplay-content-one{
+        padding: 0 ;
+    }
+    
+    .gameplay-content-one h4{
+        font-size: 1.5rem;
+    }
+    
+    .gameplay-content-one h3{
+        font-size: 2.4rem;
+    }
+    
+    .gameplay-content-one p{
+        font-size: 1.5rem;
+    }
 }
+
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     .about-content-one .child div{
