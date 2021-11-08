@@ -501,6 +501,80 @@ body{
     width: 100%;
 }
 
+/***************************************/
+/***************************************/
+/***************************************/
+/* Roadmap Section */
+.roadmap-section{
+    padding: 5%;
+    color: #fff;
+}
+
+.roadmap-h4{
+    width: 8%;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-bottom: 8px solid #FF325F;
+    padding-bottom: 10px;
+}
+
+.roadmap-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+.roadmap-content-flex-item{
+    flex: 1;
+}
+
+.roadmap-content h3{
+    font-size: 2.5rem;
+    font-family: "Robot Reavers";
+}
+
+.roadmap-content-flex-item h4{
+    font-size: 1.5rem;
+    font-family: "Robot Reavers";
+    margin-bottom: 1rem;
+}
+
+.roadmap-content-flex-item p{
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.roadmap-content-flex-item ul li{
+    list-style-type: none;
+    position: relative;
+    padding-bottom: 3rem;
+}
+
+.roadmap-content-flex-item ul li .span{
+    display: inline-block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: #0096FF;
+    outline: 2px solid #0096FF;
+    left: -70px;
+}
+
+.roadmap-content-flex-item ul li .span-2{
+    display: inline-block;
+    position: absolute;
+    width: 10px;
+    height: calc(100% + 38px);
+    background-color: #0096FF;
+    left: -55px;
+}
+
+.span-2-b{
+    background: linear-gradient(0deg, rgb(0, 15, 26) , rgba(0, 150, 255) 50.71%);
+}
 
 
 @media screen and (max-width: 767px) {
@@ -719,6 +793,53 @@ body{
     .timer p{
         font-size: 0.675rem;
     }
+
+    /***************************************/
+    /***************************************/
+    /***************************************/
+    /* Roadmap Section */
+    .roadmap-section{
+        padding: 5% 4%;
+    }
+
+    .roadmap-h4{
+        font-size: 1rem;
+    }
+
+    .roadmap-content{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .roadmap-content h3{
+        font-size: 2rem;
+    }
+
+    .roadmap-content-flex-item h4{
+        font-size: 1.125rem;
+    }
+
+    .roadmap-content-flex-item p{
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .roadmap-content-flex-item ul li{
+        padding-left: 20%;
+    }
+
+    .roadmap-content-flex-item ul li .span{
+        width: 30px;
+        height: 30px;
+        left: -10px;
+    }
+
+    .roadmap-content-flex-item ul li .span-2{
+        width: 10px;
+        left: -2px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -910,6 +1031,18 @@ body{
 
     .timer p{
         font-size: 0.675rem;
+    }
+
+    /***************************************/
+    /***************************************/
+    /***************************************/
+    /* Roadmap Section */
+
+    .roadmap-content{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
     }
 }
 
