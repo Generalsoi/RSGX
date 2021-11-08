@@ -548,7 +548,7 @@ body{
 .roadmap-content-flex-item ul li{
     list-style-type: none;
     position: relative;
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
 }
 
 .roadmap-content-flex-item ul li .span{
