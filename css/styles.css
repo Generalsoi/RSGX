@@ -602,42 +602,42 @@ body{
     }
 
     /***************************************/
-/***************************************/
-/***************************************/
-/* Tokenomics Section */
-.tokenomics-section{
-    padding: 5% 4%;
-}
+    /***************************************/
+    /***************************************/
+    /* Tokenomics Section */
+    .tokenomics-section{
+        padding: 5% 4%;
+    }
 
-.tokenomics-heading{
-    padding: 0;
-}
+    .tokenomics-heading{
+        padding: 0;
+    }
 
-.tokenomics-heading h3{
-    font-size: 1.5rem;
-}
+    .tokenomics-heading h3{
+        font-size: 1.5rem;
+    }
 
-.tokenomics-heading p{
-    font-size: 1rem;
-}
+    .tokenomics-heading p{
+        font-size: 1rem;
+    }
 
-.tokenomics-content{
-    flex-direction: column;
-}
+    .tokenomics-content{
+        flex-direction: column;
+    }
 
-.tokenomics-content-div{
-    display: flex;
-    width: 80%;
-    margin-top: 1.5rem;
-}
+    .tokenomics-content-div{
+        display: flex;
+        width: 80%;
+        margin-top: 1.5rem;
+    }
 
-.tokenomics-content-div div:last-child h5{
-    font-size: 1rem;
-}
+    .tokenomics-content-div div:last-child h5{
+        font-size: 1rem;
+    }
 
-.tokenomics-content-div div:last-child p{
-    font-size: 0.8rem;
-}
+    .tokenomics-content-div div:last-child p{
+        font-size: 0.8rem;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -755,6 +755,45 @@ body{
     }
     
     .gameplay-content-one p{
+        font-size: 1.5rem;
+    }
+
+    /***************************************/
+    /***************************************/
+    /***************************************/
+    /* Tokenomics Section */
+    .tokenomics-section{
+        padding: 5% 4%;
+        width: 100%;
+    }
+
+    .tokenomics-heading{
+        padding: 0;
+    }
+
+    .tokenomics-heading h3{
+        font-size: 2.4rem;
+    }
+
+    .tokenomics-heading p{
+        font-size: 1.5rem;
+    }
+
+    .tokenomics-content{
+        flex-direction: column;
+    }
+
+    .tokenomics-content-div{
+        display: flex;
+        width: 80%;
+        margin-top: 2rem;
+    }
+
+    .tokenomics-content-div div:last-child h5{
+        font-size: 1.8rem;
+    }
+
+    .tokenomics-content-div div:last-child p{
         font-size: 1.5rem;
     }
 }
