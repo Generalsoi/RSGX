@@ -577,6 +577,69 @@ body{
 }
 
 
+/***************************************/
+/***************************************/
+/***************************************/
+/* Contact Section */
+.contact-section{
+    padding: 5%;
+    color: #fff;
+}
+
+.contact{
+    width: 100%;
+    height: 15.25rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 172px;
+    padding: 5% 13%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact h5{
+    font-size: 1.5rem;
+    font-family: "Robot Reavers";
+    margin-bottom: 1rem;
+}
+
+.contact p{
+    font-size: 1rem;
+}
+
+.contact input{
+    width: 32rem;
+    height: 54px;
+    border-radius: 50px;
+    border: none;
+    background: rgba(255, 255, 255, 0.29);
+    padding-left: 10%;
+}
+
+.contact input::placeholder{
+    font-size: 1rem;
+    color: #fff;
+    opacity: 34%;
+}
+
+.input-div{
+    position: relative;
+}
+
+.send-div{
+    width: 5.813rem;
+    height: 54px;
+    background-color: #FF325F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
 @media screen and (max-width: 767px) {
     /***************************************/
     /***************************************/
@@ -840,6 +903,45 @@ body{
         width: 10px;
         left: -2px;
     }
+
+    /***************************************/
+    /***************************************/
+    /***************************************/
+    /* Contact Section */
+    .contact-section{
+        padding: 5% 4%;
+    }
+
+    .contact{
+        width: 100%;
+        height: 16rem;
+        border-radius: 50px;
+        padding: 10% 5%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact p{
+        font-size: 1rem;
+    }
+
+    .contact input{
+        width: 100%;
+        height: 50px;
+        border-radius: 50px;
+        border: none;
+        background: rgba(255, 255, 255, 0.29);
+        padding-left: 10%;
+    }
+
+    .input-div{
+        width: 100%;
+    }
+
+    .send-div{
+        width: 5.813rem;
+        height: 50px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -1043,6 +1145,45 @@ body{
         flex-direction: column;
         gap: 50px;
         align-items: center;
+    }
+
+    /***************************************/
+    /***************************************/
+    /***************************************/
+    /* Contact Section */
+    .contact-section{
+        padding: 5% 4%;
+    }
+
+    .contact{
+        width: 100%;
+        height: 16rem;
+        border-radius: 50px;
+        padding: 10% 5%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact p{
+        font-size: 1rem;
+    }
+
+    .contact input{
+        width: 100%;
+        height: 50px;
+        border-radius: 50px;
+        border: none;
+        background: rgba(255, 255, 255, 0.29);
+        padding-left: 10%;
+    }
+
+    .input-div{
+        width: 100%;
+    }
+
+    .send-div{
+        width: 5.813rem;
+        height: 50px;
     }
 }
 
