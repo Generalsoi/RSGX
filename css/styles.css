@@ -1159,7 +1159,7 @@ body{
         width: 100%;
         height: 16rem;
         border-radius: 50px;
-        padding: 10% 5%;
+        padding: 8% 5%;
         flex-direction: column;
         align-items: flex-start;
     }
@@ -1170,11 +1170,11 @@ body{
 
     .contact input{
         width: 100%;
-        height: 50px;
+        height: 54px;
         border-radius: 50px;
         border: none;
         background: rgba(255, 255, 255, 0.29);
-        padding-left: 10%;
+        padding-left: 5%;
     }
 
     .input-div{
@@ -1183,7 +1183,7 @@ body{
 
     .send-div{
         width: 5.813rem;
-        height: 50px;
+        height: 54px;
     }
 }
 
@@ -1196,6 +1196,50 @@ body{
         text-align: left;
         padding: 25px;
         margin-top: 0.5rem;
+    }
+
+    /***************************************/
+    /***************************************/
+    /***************************************/
+    /* Contact Section */
+    .contact-section{
+        padding: 5% 4%;
+    }
+
+    .contact{
+        width: 100%;
+        height: 18rem;
+        border-radius: 50px;
+        padding: 5%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact h5{
+        font-size: 2.4rem;
+    }
+
+    .contact p{
+        font-size: 1.5rem;
+    }
+
+    .contact input{
+        width: 80%;
+        height: 56px;
+        border-radius: 50px;
+        border: none;
+        background: rgba(255, 255, 255, 0.29);
+        padding-left: 5%;
+    }
+
+    .input-div{
+        width: 100%;
+    }
+
+    .send-div{
+        width: 5.813rem;
+        height: 56px;
+        right: 20%;
     }
 }
 
