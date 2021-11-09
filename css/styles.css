@@ -642,6 +642,61 @@ body{
 /***************************************/
 /***************************************/
 /***************************************/
+/* Features Section */
+.feature-section{
+    padding: 5%;
+    color: #fff;
+    text-align: center;
+}
+
+.features{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-top: 3rem;
+    justify-content: center;
+    
+}
+
+.features-img-div{
+    width: 96px;
+    height: 96px;
+    background: linear-gradient(180deg, rgba(0, 150, 255, 0.6) 0%, rgba(0, 150, 255, 0) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.features-img-div:nth-child(even){
+    border-right: 1px solid #0096FF;
+}
+
+.features-img-div:nth-child(even):not(.last){
+    border-left: 1px solid #0096FF;
+}
+
+.features-img-div:nth-child(odd){
+    position: relative;
+    top:-20px;
+    border-right: 1px solid #0096FF;
+}
+.features-img-div:nth-child(even){
+    position: relative;
+    bottom:-20px;
+    transform: rotate(180deg)
+}
+.features-img-div:nth-child(even) img{
+    position: relative;
+    transform: rotate(-180deg)
+}
+.features img{
+    width: 60%;
+}
+
+/***************************************/
+/***************************************/
+/***************************************/
 /* Footer Section */
 .footer-section{
     padding: 5%;
