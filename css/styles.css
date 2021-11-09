@@ -644,9 +644,14 @@ body{
 /***************************************/
 /* Features Section */
 .feature-section{
-    padding: 5%;
+    padding: 5% 5% 10%;
     color: #fff;
     text-align: center;
+}
+
+.feature-section h5{
+    font-size: 2.5rem;
+    font-family: "Robot Reavers";
 }
 
 .features{
@@ -1056,6 +1061,14 @@ body{
 
     .send-div{
         width: 5.813rem;
+        height: 50px;
+    }
+
+    /***************************************/
+    /***************************************/
+    /***************************************/
+    /* Features Section */
+    .features-img-div{
         height: 50px;
     }
 
