@@ -1131,6 +1131,7 @@ body{
 
     .input-div{
         width: 100%;
+        margin-top: 1rem;
     }
 
     .send-div{
@@ -1150,7 +1151,12 @@ body{
     /***************************************/
     /***************************************/
     /* Footer Section */
+    .footer-section{
+        padding: 5% 4%;
+    }
+
     .footer{
+        justify-content: space-between;
         gap: 5rem;
     }
 }
