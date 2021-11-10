@@ -1,5 +1,3 @@
-
-
 @font-face {
     font-family: 'Product Sans';
     font-style: normal;
@@ -26,16 +24,87 @@ body{
     font-family: Product Sans;
 }
 
-.reveal{
-    position: relative;
-    transform: translateY(150px);
+/*******************************************/
+/******** animations on scroll *************/
+/* .scroll-element{
+    min-height:100vh;
+} */
+
+.js-scroll{
     opacity: 0;
-    transition: all 2s ease;
+    transform: translateX(-150px);
 }
 
-.reveal .active{
-    transform: translateY(0px);
-    opacity: 100%;
+.js-scroll.scrolled{
+    opacity: 1;
+}
+
+.scrolled.slide-up{
+    animation: slide-in-up 1s ease-in-out both;
+}
+
+@keyframes slide-in-up {
+    0%{
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.scrolled.slide-down{
+    animation: slide-in-down 1s ease-in-out both;
+}
+
+@keyframes slide-in-down {
+    0%{
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.scrolled.slide-left {
+    animation: slide-in-left 1s ease-in-out both;
+}
+
+@keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-100px);
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+.scrolled.slide-right {
+    animation: slide-in-right 1s ease-in-out both;
+ }
+
+@keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(100px);
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
 }
 
 .introduction-section, .about-section, .gameplay-section{
