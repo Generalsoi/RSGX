@@ -1008,6 +1008,7 @@ body{
 
     .tokenomics-content{
         flex-direction: column;
+        width: 100%;
     }
 
     .tokenomics-content-div{
