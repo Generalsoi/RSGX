@@ -1014,8 +1014,12 @@ body{
     .tokenomics-content-div{
         display: flex;
         width: 80%;
-        gap: 30px;
         margin-top: 2.5rem;
+    }
+
+    .tokenomics-content-div div:last-child{
+        text-align: left;
+        margin-left: 20px;
     }
 
     .tokenomics-content-div div:last-child h5{
