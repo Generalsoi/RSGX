@@ -1027,7 +1027,7 @@ body{
     /***************************************/
     /* Countdown Section */
     .countdown-section{
-        padding: 7% 4%;
+        padding: 10% 4%;
     }
 
     .countdown-timer{
@@ -1147,6 +1147,11 @@ body{
     /***************************************/
     /***************************************/
     /* Features Section */
+    .feature-section{
+        padding: 10% 4%;
+        margin-bottom: 3rem;
+    }
+
     .features-img-div{
         height: 50px;
     }
