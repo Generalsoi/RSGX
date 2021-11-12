@@ -133,9 +133,13 @@ body{
     text-align: center;
 }
 
+.nav-logo img{
+    width: 50%;
+}
+
 .nav-logo h3{
     color: #fff;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .navbar ul{
@@ -287,6 +291,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    position: sticky
 }
 
 .social-media-links div{
@@ -338,7 +343,7 @@ body{
     align-items: flex-end;
     flex-wrap: wrap;
     gap: 2.5rem;
-    text-align: center
+    text-align: left
 }
 
 .about-content-one .child{
@@ -516,7 +521,6 @@ body{
     padding: 18px 8px;
     font-family: "Robot Reavers";
     font-size: 1.5rem;
-    filter: blur(1px)
 }
 
 .tokenomics-content-div div:last-child h5{
