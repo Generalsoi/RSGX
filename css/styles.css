@@ -548,11 +548,25 @@ body{
 
 .countdown-timer{
     width: 100%; 
-    height: 16rem;
+    height: 21rem;
     padding: 2% 5%;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
     border: none;
     border-radius: 172px;
+}
+
+.countdown-btn{
+    width: 18rem;
+    height: 3rem;
+    background: linear-gradient(90deg, rgba(215, 222, 248, 0.51) 4.33%, rgba(255, 255, 255, 0) 129%);
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    font-family: "Robot Reavers"
 }
 
 .countdown-timer h3{
@@ -1047,9 +1061,13 @@ body{
 
     .countdown-timer{
         width: 100%; 
-        height: 13rem;
+        height: 18rem;
         padding: 7% 2%;
         border-radius: 50px;
+    }
+
+    .countdown-btn{
+        width: 12rem;
     }
 
     .countdown-timer h3{
@@ -1353,7 +1371,7 @@ body{
 
     .countdown-timer{
         width: 100%; 
-        height: 16rem;
+        height: 19rem;
         padding: 4% 2%;
         border-radius: 50px;
     }
