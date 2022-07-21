@@ -8,7 +8,7 @@ const countDown = () => {
   const seconds_ = document.getElementById("seconds-left");
 
   //calculating time left
-  const timeLeft = launchDate - today;
+  const timeLeft = 0;
   const secondsLeft = Math.floor((timeLeft / 1000) % 60);
   const minutesLeft = Math.floor((timeLeft / (1000 * 60)) % 60);
   const hoursLeft = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
